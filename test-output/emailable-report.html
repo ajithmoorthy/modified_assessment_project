@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">8,333</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.atmecs.website.testscripts.Insights</td><td><a href="#m0">validateBlogs</a></td><td rowspan="1">1569853931894</td><td rowspan="1">1040</td></tr></tbody>
+</table>
+<h2>Default test</h2><h3 id="m0">org.atmecs.website.testscripts.Insights#validateBlogs</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
+Data provider mismatch
+Method: validateBlogs([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=9, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=10, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=11, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Debunking Myths about AI,(java.lang.String) How Immersive Reality is transforming Healthcare,(java.lang.String) Securing Apache Kafka using trustStore and SASL,(java.lang.String) Explained! Distributed Load testing – How to calculate number of “Load Generators”?,(java.lang.String) Why do I need Istio for microservices?,(java.lang.String) Blockchain – State of POCs,(java.lang.String) Of all the cutting-edge technologies today, Artificial Intelligence is arguably the most important one, given its wide range of potential and prominence. However, AI too has been a victim of some myths and misconceptions which usually surround anything that is popular. Here’s an infographic to debunk the most common myths about AI.,(java.lang.String) Immersive Reality has been a great addition to the development of technology over the past decade. Not only in the entertainment industry, but AR and VR have been reverberating their presence across many industries. According to a report, Healthcare will be spending around $5bn on AR and VR by 2025. Scientists all around the world have been innovating methods and technologies to transform how healthcare industry functions. To understand this better, have a look at the below infographic.,(java.lang.String) Apache Kafka comes with a lot of security features out of the box (at least since version 0.9). But one feature is missing if you deal with sensitive mission critical data: Encryption of the data itself.
+ 
+Talking about Encryption, Kafka Security mainly has three components:
+
+Encryption of data in-flight using SSL/TLS: This component allows your data to be encrypted. This happens between both producers and customers, and consumers and Kafka.This is the most common pattern we see on web.
+Authentication using SSL or SASL: This component is to verify the identity. It allows your producers and consumers to authenticate the Kafka cluster. Also, this component is the best way to enable your clients to endorse an identity, for authorization.
+Authorization using ACLs (Access Control Lists): After authentication, your Kafka brokers are able to run them against ACLs. This is to determine whether or not a particular client would be authorized to write/read.
+
+
+
+
+,(java.lang.String) xhcbvkb,(java.lang.String) kjfdhkj,(java.lang.String) dsjfh,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,(java.lang.String) ,null]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:45)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:796)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:983)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
